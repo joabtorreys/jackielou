@@ -1,0 +1,463 @@
+@media (max-width:500px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    .active {
+        transform: translate(-100%);
+    }
+
+
+
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        position: relative;
+        display: flex;
+    }
+
+    .div1 {
+        flex: 3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .div1 h1 {
+        font-size: clamp(20px, 8vw, 35px);
+        margin-left: 10%;
+        color: whitesmoke;
+        text-shadow: 3px 5px 8px #c96577;
+        text-transform: capitalize;
+    }
+
+    .div2 {
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        left: 100%;
+        height: 90vh;
+        width: 100vw;
+        transition: 0.5s;
+    }
+
+    .nav {
+        background-color: pink;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .nav a {
+        color: black;
+        font-size: clamp(20px, 5vw, 24px);
+        text-decoration: none;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 3px 2px 6px white;
+    }
+
+    .div3 {
+        flex: 1;
+    }
+
+    .btnwrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    #btn {
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+        border: 0;
+        color: white;
+        background-color: #ffa1b1;
+        font-size: clamp(11px, 3.5vw, 16px);
+    }
+
+    #btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+
+    main {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+    }
+
+    .hero {
+
+        position: absolute;
+        top: 60%;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .hero h2 {
+        color: white;
+        font-size: clamp(20px, 8vw, 35px);
+    }
+
+    .hero h5 {
+        color: white;
+        font-size: clamp(11px, 4vw, 19px);
+
+    }
+
+    .hero p {
+        color: white;
+        font-size: clamp(11px, 4.5vw, 19px);
+        color: #ffa1b1;
+    }
+
+
+
+    .backgroundimg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/yoga.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 30vw;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer h4 {
+        color: whitesmoke;
+        font-size: clamp(8px, 2.7vw, 13px);
+        font-family: monospace;
+        text-transform: capitalize;
+        padding: 2%;
+    }
+
+
+
+
+}
+
+
+
+/* tablet styles */
+
+@media (min-width:500px) and (max-width:1000px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    .active {
+        transform: translate(-100%);
+    }
+
+
+
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        position: relative;
+        display: flex;
+    }
+
+    .div1 {
+        flex: 5;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .div1 h1 {
+        font-size: clamp(20px, 5.5vw, 36px);
+        margin-left: 10%;
+        color: whitesmoke;
+        text-shadow: 3px 5px 8px #c96577;
+        text-transform: capitalize;
+    }
+
+    .div2 {
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        left: 100%;
+        height: 90vh;
+        width: 100vw;
+        transition: 0.5s;
+    }
+
+    .nav {
+        background-color: pink;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .nav a {
+        color: black;
+        font-size: clamp(20px, 5vw, 24px);
+        text-decoration: none;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 3px 2px 6px white;
+    }
+
+    .div3 {
+        flex: 1;
+    }
+
+    .btnwrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    #btn {
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+        border: 0;
+        color: white;
+        background-color: #ffa1b1;
+        font-size: clamp(11px, 3vw, 15px);
+    }
+
+    #btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+
+    main {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+    }
+
+    .hero {
+        background-color: rgb(0, 0, 0, 0.5);
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .hero h2 {
+        color: white;
+        font-size: clamp(20px, 9vw, 37px);
+    }
+
+    .hero h5 {
+        color: white;
+        font-size: clamp(11px, 3vw, 19px);
+
+    }
+
+    .hero p {
+        color: white;
+        font-size: clamp(11px, 4.5vw, 19px);
+        color: #ffa1b1;
+    }
+
+
+
+    .backgroundimg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/yoga.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 26vw;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer h4 {
+        color: whitesmoke;
+        font-size: clamp(8px, 2.6vw, 13px);
+        font-family: monospace;
+        text-transform: capitalize;
+        padding: 2%;
+    }
+
+
+
+
+}
+
+
+/* desktop styles */
+
+@media (min-width:1000px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .div3 {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+    }
+
+    .div1 {
+        flex: 1;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 2%;
+    }
+
+
+
+    .div2 {
+        flex: 2;
+    }
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 5%;
+    }
+
+    .nav a {
+        margin: 8%;
+    }
+
+    main {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+
+    }
+
+    .hero {
+        background-color: rgb(0, 0, 0, 0.5);
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .hero h2 {
+        color: white;
+        font-size: clamp(20px, 9vw, 37px);
+    }
+
+    .hero h5 {
+        color: white;
+        font-size: clamp(11px, 3vw, 19px);
+
+    }
+
+    .hero p {
+        color: white;
+        font-size: clamp(11px, 4.5vw, 19px);
+        color: #ffa1b1;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 26vw;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer h4 {
+        color: whitesmoke;
+        font-size: clamp(8px, 2.6vw, 13px);
+        font-family: monospace;
+        text-transform: capitalize;
+        padding: 2%;
+    }
+
+    .backgroundimg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/yoga.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
