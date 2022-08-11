@@ -30,7 +30,7 @@
     }
 
     .div1 h1 {
-        font-size: clamp(20px, 8vw, 35px);
+        font-size: clamp(20px, 7vw, 35px);
         margin-left: 10%;
         color: whitesmoke;
         text-shadow: 3px 5px 8px #c96577;
@@ -115,7 +115,7 @@
     }
 
     .hero h2 {
-        color: white;
+        color: pink;
         font-size: clamp(20px, 8vw, 35px);
     }
 
@@ -147,22 +147,7 @@
     }
 
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 30vw;
-        background-color: black;
-        text-align: center;
-    }
 
-    footer h4 {
-        color: whitesmoke;
-        font-size: clamp(8px, 2.7vw, 13px);
-        font-family: monospace;
-        text-transform: capitalize;
-        padding: 2%;
-    }
 
 
 
