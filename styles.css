@@ -6,138 +6,93 @@
         box-sizing: border-box;
     }
 
-
-
-    .active {
-        transform: translate(-100%);
+    ::-webkit-scrollbar {
+        display: none;
     }
 
+    html {
+        font-size: 16px;
+    }
 
-
-
-    header {
+    .header {
+        position: fixed;
         width: 100vw;
         height: 10vh;
-        position: relative;
-        display: flex;
-    }
-
-    .div1 {
-        flex: 3;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .div1 h1 {
-        font-size: clamp(20px, 7vw, 35px);
-        margin-left: 10%;
-        color: whitesmoke;
-        text-shadow: 3px 5px 8px #c96577;
-        text-transform: capitalize;
+        z-index: 20;
     }
 
     .div2 {
-        position: fixed;
-        z-index: 1;
-        top: 10vh;
+        position: absolute;
+        top: 100%;
         left: 100%;
         height: 90vh;
         width: 100vw;
         transition: 0.5s;
     }
 
-    .nav {
+    .links {
+
+        width: 100%;
+        height: 100%;
         background-color: pink;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
-    .nav a {
-        color: black;
-        font-size: clamp(20px, 5vw, 24px);
-        text-decoration: none;
-        text-transform: capitalize;
-        text-align: center;
-        font-weight: bold;
-        text-shadow: 3px 2px 6px white;
-    }
-
-    .div3 {
-        flex: 1;
-    }
-
-    .btnwrap {
-        height: 100%;
-        width: 100%;
-    }
-
-    #btn {
-        text-transform: uppercase;
-        height: 100%;
-        width: 100%;
-        border: 0;
-        color: white;
-        background-color: #ffa1b1;
-        font-size: clamp(11px, 3.5vw, 16px);
-    }
-
-    #btn:hover {
-        opacity: 0.7;
-        cursor: pointer;
-    }
-
-
-    main {
-        width: 100vw;
-        height: 90vh;
-        position: relative;
-    }
-
-    .hero {
-
-        position: absolute;
-        top: 60%;
-        left: 0;
-        width: 100%;
-        height: 30%;
-        opacity: 0.7;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: white;
-    }
-
-    .hero h2 {
-        color: pink;
-        font-size: clamp(20px, 8vw, 35px);
-    }
-
-    .hero h5 {
-        color: white;
-        font-size: clamp(11px, 4vw, 19px);
 
     }
 
-    .hero p {
-        color: white;
-        font-size: clamp(11px, 4.5vw, 19px);
-        color: #ffa1b1;
+
+
+    .links a {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 12%;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-
-
-    .backgroundimg {
+    .div3 {
         position: fixed;
-        left: 0;
+        z-index: 199;
+        background-color: aqua;
+        width: 20vw;
+        height: 10vh;
         top: 0;
-        z-index: -1;
+        right: 0;
+
+    }
+
+    .btnwrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border: 0;
+        outline: none;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+
+
+
+
+    .active {
+        transform: translate(-100%);
+    }
+
+    /* end of header */
+
+    .main {
         width: 100vw;
         height: 100vh;
         background-image: url(./assets/yoga.jpg);
@@ -146,10 +101,171 @@
         background-size: cover;
     }
 
+    .about {
+        background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .contact {
+        background-color: greenyellow;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .maincontainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+        font-style: oblique;
+        font-family: Marker Felt, fantasy;
+        color: black;
+        margin: 5%;
+        text-shadow: 2px 3px 8px pink;
+    }
+
+
+    .hero {
+        width: 100%;
+        height: 32%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: aliceblue; */
+
+
+    }
+
+    .contentwrap {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .contentwrap h2 {
+        color: pink;
+        font-size: 2rem;
+        margin-top: 7%;
+        text-align: center;
+
+    }
+
+    .contentwrap h4 {
+        color: whitesmoke;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .contentwrap p {
+        color: pink;
+        font-size: 1rem;
+        text-align: center;
+    }
 
 
 
+    /* about section */
 
+    .about-title {
+        width: 100vw;
+        height: 10vh;
+        background-color: pink;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .about-title h2 {
+        color: black;
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin-left: 10%;
+    }
+
+    .bio {
+        width: 100vw;
+        height: 40vh;
+        background-color: pink;
+
+    }
+
+    .bio p {
+        padding: 5%;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .vidwrap {
+        width: 100vw;
+        height: 50vh;
+        background-color: gray;
+    }
+
+    .vid {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .contact-title {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .contact-title h2 {
+        color: black;
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin-left: 10%;
+    }
+
+    .info {
+        width: 100vw;
+        height: 50vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .socialmedia {
+        width: 100vw;
+        height: 30vh;
+        background-color: gray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 
 }
@@ -161,169 +277,9 @@
 @media (min-width:500px) and (max-width:1000px) {
 
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-
-
-    .active {
-        transform: translate(-100%);
-    }
-
-
-
-
     header {
-        width: 100vw;
-        height: 10vh;
-        position: relative;
-        display: flex;
+        background-color: yellow;
     }
-
-    .div1 {
-        flex: 5;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .div1 h1 {
-        font-size: clamp(20px, 5.5vw, 36px);
-        margin-left: 10%;
-        color: whitesmoke;
-        text-shadow: 3px 5px 8px #c96577;
-        text-transform: capitalize;
-    }
-
-    .div2 {
-        position: fixed;
-        z-index: 1;
-        top: 10vh;
-        left: 100%;
-        height: 90vh;
-        width: 100vw;
-        transition: 0.5s;
-    }
-
-    .nav {
-        background-color: pink;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
-    .nav a {
-        color: black;
-        font-size: clamp(20px, 5vw, 24px);
-        text-decoration: none;
-        text-transform: capitalize;
-        text-align: center;
-        font-weight: bold;
-        text-shadow: 3px 2px 6px white;
-    }
-
-    .div3 {
-        flex: 1;
-    }
-
-    .btnwrap {
-        height: 100%;
-        width: 100%;
-    }
-
-    #btn {
-        text-transform: uppercase;
-        height: 100%;
-        width: 100%;
-        border: 0;
-        color: white;
-        background-color: #ffa1b1;
-        font-size: clamp(11px, 3vw, 15px);
-    }
-
-    #btn:hover {
-        opacity: 0.7;
-        cursor: pointer;
-    }
-
-
-    main {
-        width: 100vw;
-        height: 90vh;
-        position: relative;
-    }
-
-    .hero {
-        background-color: rgb(0, 0, 0, 0.5);
-        position: absolute;
-        top: 40%;
-        left: 0;
-        width: 60%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-
-    .hero h2 {
-        color: white;
-        font-size: clamp(20px, 9vw, 37px);
-    }
-
-    .hero h5 {
-        color: white;
-        font-size: clamp(11px, 3vw, 19px);
-
-    }
-
-    .hero p {
-        color: white;
-        font-size: clamp(11px, 4.5vw, 19px);
-        color: #ffa1b1;
-    }
-
-
-
-    .backgroundimg {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        background-image: url(./assets/yoga.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 26vw;
-        background-color: black;
-        text-align: center;
-    }
-
-    footer h4 {
-        color: whitesmoke;
-        font-size: clamp(8px, 2.6vw, 13px);
-        font-family: monospace;
-        text-transform: capitalize;
-        padding: 2%;
-    }
-
 
 
 
@@ -334,115 +290,10 @@
 
 @media (min-width:1000px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .div3 {
-        display: none;
-    }
 
     header {
-        width: 100vw;
-        height: 10vh;
-        display: flex;
+        background-color: aqua;
     }
 
-    .div1 {
-        flex: 1;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        padding-left: 2%;
-    }
-
-
-
-    .div2 {
-        flex: 2;
-    }
-
-    .nav {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 5%;
-    }
-
-    .nav a {
-        margin: 8%;
-    }
-
-    main {
-        width: 100vw;
-        height: 90vh;
-        position: relative;
-
-    }
-
-    .hero {
-        background-color: rgb(0, 0, 0, 0.5);
-        position: absolute;
-        top: 40%;
-        left: 0;
-        width: 60%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-
-    .hero h2 {
-        color: white;
-        font-size: clamp(20px, 9vw, 37px);
-    }
-
-    .hero h5 {
-        color: white;
-        font-size: clamp(11px, 3vw, 19px);
-
-    }
-
-    .hero p {
-        color: white;
-        font-size: clamp(11px, 4.5vw, 19px);
-        color: #ffa1b1;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 26vw;
-        background-color: black;
-        text-align: center;
-    }
-
-    footer h4 {
-        color: whitesmoke;
-        font-size: clamp(8px, 2.6vw, 13px);
-        font-family: monospace;
-        text-transform: capitalize;
-        padding: 2%;
-    }
-
-    .backgroundimg {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        background-image: url(./assets/yoga.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
 }
