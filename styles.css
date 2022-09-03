@@ -108,12 +108,7 @@
 
     }
 
-    .contact {
-        background-color: whitesmoke;
-        width: 100vw;
-        height: 100vh;
 
-    }
 
     .maincontainer {
         position: relative;
@@ -135,12 +130,20 @@
     }
 
     .title h1 {
-        font-size: 1.8rem;
-        font-style: oblique;
+        font-size: 1.7rem;
         font-family: Marker Felt, fantasy;
-        color: #b2dd07;
+        font-weight: bold;
+        color: black;
         margin: 5%;
-        text-shadow: 2px 3px 8px black;
+        text-shadow: 0px 0px 5px gold,
+            0px 0px 10px gold,
+            0px 0px 15px gold,
+            0px 0px 20px gold,
+            0px 0px 25px gold;
+
+
+
+
     }
 
 
@@ -163,12 +166,13 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        padding: 10%;
 
     }
 
     .contentwrap h2 {
         color: pink;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 7%;
         text-align: center;
 
@@ -176,13 +180,13 @@
 
     .contentwrap h4 {
         color: whitesmoke;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
     .contentwrap p {
         color: pink;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -200,10 +204,9 @@
     }
 
     .about-title h2 {
-        color: #b2dd07;
-        text-shadow: 2px 3px 8px black;
-        font-size: 2rem;
-        text-transform: capitalize;
+        color: black;
+        font-size: 1.5rem;
+        text-transform: uppercase;
         margin-left: 10%;
     }
 
@@ -233,26 +236,32 @@
     }
 
 
+    .contact {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+
     .contact-title {
         width: 100vw;
         height: 10vh;
         display: flex;
         justify-content: start;
         align-items: center;
+        background-color: black;
     }
 
     .contact-title h2 {
-        color: #b2dd07;
-        text-shadow: 2px 3px 8px black;
-        font-size: 2rem;
-        text-transform: capitalize;
+        color: pink;
+        font-size: 1.3rem;
+        text-transform: uppercase;
         margin-left: 10%;
     }
 
     .info {
         width: 100vw;
         height: 50vh;
-        background-color: aliceblue;
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -260,16 +269,60 @@
 
     }
 
+    .info h2 {
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.7rem;
+    }
+
+    .info p {
+        color: pink;
+        font-size: 1rem;
+
+    }
+
     .socialmedia {
         width: 100vw;
         height: 30vh;
-        background-color: gray;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
+    .youtube {
 
+        text-align: center;
+        color: red;
+    }
+
+    .youtube h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+    }
+
+    .facebook {
+        text-align: center;
+        color: red;
+    }
+
+    .facebook h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+    }
+
+    .instagram {
+
+        text-align: center;
+        color: red;
+    }
+
+    .instagram h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+    }
 }
 
 
