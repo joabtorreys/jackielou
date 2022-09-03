@@ -130,16 +130,13 @@
     }
 
     .title h1 {
-        font-size: 1.7rem;
-        font-family: Marker Felt, fantasy;
-        font-weight: bold;
-        color: black;
+        font-size: 1.6rem;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: fantasy;
         margin: 5%;
-        text-shadow: 0px 0px 5px gold,
-            0px 0px 10px gold,
-            0px 0px 15px gold,
-            0px 0px 20px gold,
-            0px 0px 25px gold;
+        text-shadow: 0px 0px 12px pink;
+
+
 
 
 
@@ -252,7 +249,7 @@
     }
 
     .contact-title h2 {
-        color: pink;
+        color: white;
         font-size: 1.3rem;
         text-transform: uppercase;
         margin-left: 10%;
@@ -270,13 +267,13 @@
     }
 
     .info h2 {
-        color: white;
+        color: pink;
         text-transform: capitalize;
         font-size: 1.7rem;
     }
 
     .info p {
-        color: pink;
+        color: white;
         font-size: 1rem;
 
     }
@@ -299,9 +296,11 @@
         text-transform: capitalize;
         color: aliceblue;
         font-size: 1rem;
+        opacity: 0.8;
     }
 
     .facebook {
+
         text-align: center;
         color: red;
     }
@@ -310,6 +309,7 @@
         text-transform: capitalize;
         color: aliceblue;
         font-size: 1rem;
+        opacity: 0.8;
     }
 
     .instagram {
@@ -322,6 +322,7 @@
         text-transform: capitalize;
         color: aliceblue;
         font-size: 1rem;
+        opacity: 0.8;
     }
 }
 
