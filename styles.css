@@ -331,10 +331,329 @@
 /* tablet styles */
 
 @media (min-width:500px) and (max-width:1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    .header {
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        z-index: 20;
+    }
+
+    .div2 {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        height: 90vh;
+        width: 50vw;
+        transition: 0.5s;
+    }
+
+    .links {
+
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 
 
-    header {
+
+    .links a {
+        font-size: 20px;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 12%;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .div3 {
+        position: fixed;
+        z-index: 199;
+        background-color: aqua;
+        width: 12vw;
+        height: 10vh;
+        top: 0;
+        right: 0;
+
+    }
+
+    .btnwrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border: 0;
+        outline: none;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+
+
+
+
+    .active {
+        transform: translate(-100%);
+    }
+
+    /* end of header */
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/yoga.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about {
         background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+
+
+    .maincontainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .title h1 {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: fantasy;
+        margin: 5%;
+        text-shadow: 0px 0px 12px pink;
+        padding-top: 5%;
+
+    }
+
+
+    .hero {
+        width: 100%;
+        height: 55%;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .contentwrap {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 10%;
+
+    }
+
+    .contentwrap h2 {
+        color: pink;
+        font-size: 26px;
+        text-align: center;
+
+    }
+
+    .contentwrap h4 {
+        color: whitesmoke;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .contentwrap p {
+        color: pink;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    /* about section */
+
+    .about-title {
+        width: 100vw;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .about-title h2 {
+        color: whitesmoke;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-left: 10%;
+    }
+
+    .bio {
+        width: 100vw;
+        height: 40vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .bio p {
+        padding: 5%;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .vidwrap {
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vid {
+        width: 60%;
+        height: 60%;
+    }
+
+
+    .contact {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+
+    .contact-title {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    .contact-title h2 {
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-left: 10%;
+    }
+
+    .info {
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .info h2 {
+        color: pink;
+        text-transform: capitalize;
+        font-size: 1.7rem;
+    }
+
+    .info p {
+        color: white;
+        font-size: 1rem;
+
+    }
+
+    .socialmedia {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .youtube {
+
+        text-align: center;
+        color: red;
+    }
+
+    .youtube h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .facebook {
+
+        text-align: center;
+        color: red;
+    }
+
+    .facebook h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .instagram {
+
+        text-align: center;
+        color: red;
+    }
+
+    .instagram h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
     }
 
 
@@ -346,10 +665,343 @@
 
 @media (min-width:1000px) {
 
-
-    header {
-        background-color: aqua;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    .header {
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        z-index: 20;
+    }
+
+    .div2 {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        height: 90vh;
+        width: 30vw;
+        transition: 0.5s;
+    }
+
+    .links {
+
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    .links a {
+        font-size: 21px;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 12%;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .links a:hover {
+        opacity: 0.5;
+        color: red;
+    }
+
+
+    .div3 {
+        position: fixed;
+        z-index: 199;
+        width: 6vw;
+        height: 10vh;
+        top: 0;
+        right: 0;
+
+    }
+
+    .btnwrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border: 0;
+        outline: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+
+
+
+
+    .active {
+        transform: translate(-100%);
+    }
+
+    /* end of header */
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./assets/yoga.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about {
+        background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+
+
+    .maincontainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: fantasy;
+        text-shadow: 0px 0px 12px pink;
+        margin-left: 10%;
+    }
+
+
+    .hero {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .contentwrap {
+        width: 100%;
+        height: 100%;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .contentwrap h2 {
+        color: pink;
+        font-size: 34px;
+        margin-top: 7%;
+        text-align: center;
+
+    }
+
+    .contentwrap h4 {
+        color: whitesmoke;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .contentwrap p {
+        color: pink;
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+
+
+    /* about section */
+
+    .about-title {
+        width: 100vw;
+        height: 10%;
+        background-color: black;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .about-title h2 {
+        color: whitesmoke;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-left: 10%;
+        opacity: 0.8;
+    }
+
+    .bio {
+        width: 50%;
+        height: 90%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bio p {
+        padding: 5%;
+        font-size: 1.5rem;
+        text-align: center;
+        color: aliceblue;
+
+    }
+
+    .vidwrap {
+        width: 50%;
+        height: 90%;
+        background-color: black;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vid {
+        width: 50%;
+        height: 50%;
+    }
+
+
+    .contact {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+
+    .contact-title {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        background-color: black;
+    }
+
+    .contact-title h2 {
+        color: white;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-left: 10%;
+        opacity: 0.8;
+    }
+
+    .info {
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .info h2 {
+        color: pink;
+        text-transform: capitalize;
+        font-size: 1.7rem;
+    }
+
+    .info p {
+        color: white;
+        font-size: 1rem;
+
+    }
+
+    .socialmedia {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .youtube {
+
+        text-align: center;
+        color: red;
+    }
+
+    .youtube h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .facebook {
+
+        text-align: center;
+        color: red;
+    }
+
+    .facebook h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .instagram {
+
+        text-align: center;
+        color: red;
+    }
+
+    .instagram h5 {
+        text-transform: capitalize;
+        color: aliceblue;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
 
 
 }
